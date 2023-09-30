@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex; /*display is flexible*/
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.container{ 
+    background: white;
+    position: relative;
+    width: 100%;
+    margin: 5px; /*margin towards the top of the webpage*/
+    box-shadow: 5px 20px 40px grey; /*horizontal offset, vertical offset, blur, colour*/
+}
+.top{
+  background:linear-gradient(45deg, #1B3166, #9399A6); /*use color code on google*/
+  position: relative;
+  width: 100%;
+  height: 500px;
+  padding: 20px; /*distance inside the box*/
+}
+.top h2{
+  color: white;
+  font-size: 3em;
+  text-transform: uppercase;
+  line-height: 1.2em; /*distance between line of text vertically*/
+  letter-spacing: 0.1em; /*distance between every letter horizontally*/
+}
+h2 span {
+  font-size: 0.5em;
+  font-weight: 400; /*thicknes of the font*/
+}
+
+.group{
+  position: relative;
+  display: grid; /*create a grid template*/
+  gap: 40px; /*sets the gap for both column and row*/
+  width: 100%;
+  grid-template-columns: 0.5fr 2.5fr; /*fr = fraction 0.5/3 and 2.5/3*/
+  margin-top: 20px;
+}
+.group .imgBx{
+  position: relative;
+  width: 150%;
+}
+.group .imgBx img{
+  justify-content: center;
+  position: relative;
+  width: 70%;
+}
+.right p{
+  color: white;
+  font-size: 1.1em;
+}
+.info{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;/*fr = fraction 1/3, 1/3, 1/3*/
+  margin-top: 75px;
+  align-items: center;
+  justify-items: center;
+}
+.icon{
+  color: white;
+  size: 0.5em;
+}
+.text{
+  color: white;
+  font-size: 0.93em;
+}
+.bottom{
+  position: relative;
+  display: grid;
+  grid-template-columns: 2.1fr 1.9fr;
+  margin: 20px 5px; /*margin top-bottom, left-right*/
+}
+h4{
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  letter-spacing: 0.1em;
+  background: linear-gradient(45deg, #1B3166, #9399A6);
+  padding: 0 10px;
+  display: inline-flex; /*buat kotak ikut text*/
+}
+.experienceBox{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin-right: 60px;
+}
+.experienceBox .value span{
+  font-weight: 400;
+  font-style: italic;
+}
+.value li{
+  text-align: justify; /*justify the paragraph (ketengah) */
+  text-justify: inter-word;
+}
+.educationBox{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin-right: 60px;
+}
+.educationBox b{
+  text-align: justify;
+}
+.skillBox{
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin-right: 60px;
+}
+.progress .progress-bar{
+  background-color:  #1B3166
+}
+b{
+  color: #1B3166;
+}
